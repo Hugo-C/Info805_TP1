@@ -118,6 +118,17 @@ void TriangleSoup::read(std::istream& in) {
     }
 }
 
+void TriangleSoup::write(std::ostream& out) {
+    if (!out.good()) {
+        std::cerr << "ERROR" << std::endl;
+        return;
+    }
+    out << "# TRISOUP generated from info805 TP1" << std::endl;
+    for (const auto& triangle : triangles) {
+        out << triangle << std::endl;
+    }
+}
+
 // Calcule la boite englobante de la soupe de triangle
 void TriangleSoup::boundingBox(Vecteur& low, Vecteur& up) const {
     // init des vecteurs avec les premiers vecteurs de triangle soupe

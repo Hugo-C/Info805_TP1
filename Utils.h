@@ -57,6 +57,8 @@ struct TriangleSoup {
 
     void read(std::istream& in);
 
+    void write(std::ostream& out);
+
     void boundingBox(Vecteur& low, Vecteur& up) const;
 };
 

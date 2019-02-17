@@ -12,7 +12,7 @@
  # Noms de vos fichiers entete
  HEADERS = Viewer.h
  # Noms de vos fichiers source
- SOURCES = Viewer.cpp main.cpp Utils.cpp TriangleSoupZipper.cpp
+ SOURCES = Viewer.cpp compression.cpp Utils.cpp TriangleSoupZipper.cpp
 
  ###########################################################
  # Commentez/decommentez selon votre config/systeme
